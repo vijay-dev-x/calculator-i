@@ -12,28 +12,32 @@ function App() {
           </div>
           <div className="row gray">
             <input
-              type="text"
+              // readonly
+              style={{ textAlign: "center" }}
+              type="button"
               value="AC"
               onClick={(e) => {
                 setNum("");
               }}
             />
             <input
-              type="text"
+              type="button"
               value="DL"
               onClick={(e) => {
                 setNum(num.slice(0, -1));
               }}
             />
             <input
-              type="text"
+              readonly
+              type="button"
               value="%"
               onClick={(e) => {
                 setNum(num + e.target.value);
               }}
             />
             <input
-              type="text"
+              readonly
+              type="button"
               className="orange"
               value="/"
               onClick={(e) => {
@@ -43,28 +47,32 @@ function App() {
           </div>
           <div className="row">
             <input
-              type="text"
+              readonly
+              type="button"
               value="7"
               onClick={(e) => {
                 setNum(num + e.target.value);
               }}
             />
             <input
-              type="text"
+              readonly
+              type="button"
               value="8"
               onClick={(e) => {
                 setNum(num + e.target.value);
               }}
             />
             <input
-              type="text"
+              readonly
+              type="button"
               value="9"
               onClick={(e) => {
                 setNum(num + e.target.value);
               }}
             />
             <input
-              type="text"
+              readonly
+              type="button"
               value="*"
               onClick={(e) => {
                 setNum(num + e.target.value);
@@ -73,28 +81,32 @@ function App() {
           </div>
           <div className="row">
             <input
-              type="text"
+              readonly
+              type="button"
               value="4"
               onClick={(e) => {
                 setNum(num + e.target.value);
               }}
             />
             <input
-              type="text"
+              readonly
+              type="button"
               value="5"
               onClick={(e) => {
                 setNum(num + e.target.value);
               }}
             />
             <input
-              type="text"
+              readonly
+              type="button"
               value="6"
               onClick={(e) => {
                 setNum(num + e.target.value);
               }}
             />
             <input
-              type="text"
+              readonly
+              type="button"
               className="orange"
               value="-"
               onClick={(e) => {
@@ -104,28 +116,32 @@ function App() {
           </div>
           <div className="row">
             <input
-              type="text"
+              readonly
+              type="button"
               value="1"
               onClick={(e) => {
                 setNum(num + e.target.value);
               }}
             />
             <input
-              type="text"
+              readonly
+              type="button"
               value="2"
               onClick={(e) => {
                 setNum(num + e.target.value);
               }}
             />
             <input
-              type="text"
+              readonly
+              type="button"
               value="3"
               onClick={(e) => {
                 setNum(num + e.target.value);
               }}
             />
             <input
-              type="text"
+              readonly
+              type="button"
               value="+"
               className="orange"
               onClick={(e) => {
@@ -135,21 +151,24 @@ function App() {
           </div>
           <div className="row orangeee">
             <input
-              type="text"
+              readonly
+              type="button"
               value="0"
               onClick={(e) => {
                 setNum(num + e.target.value);
               }}
             />
             <input
-              type="text"
+              readonly
+              type="button"
               value="."
               onClick={(e) => {
                 setNum(num + e.target.value);
               }}
             />
             <input
-              type="text"
+              readonly
+              type="button"
               value="="
               onClick={() => {
                 setNum(eval(num));
